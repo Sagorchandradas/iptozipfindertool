@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional SaaS IP Lookup Tool</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+
+<header>
+  <div class="container header-content">
+    <h1>𝓐𝓭𝓼𝔀𝓸𝓻𝓵𝓭𝓜𝓮𝓭𝓲𝓪</h1>
+    <div class="toggle" onclick="toggleTheme()">🌙 Dark</div>
+  </div>
+</header>
+
+<div id="particles-js"></div>
+
+<main>
+  <div class="card lookup-card">
+    <h2>IP → ZIP / City Lookup</h2>
+    <input id="ip" placeholder="Enter IP address">
+    <div class="buttons">
+      <button onclick="lookupIP()">Lookup</button>
+      <button onclick="downloadJSON()" class="downloadBtn">Download JSON</button>
+    </div>
+
+    <div class="loader" id="loader">🔄</div>
+    <div class="error" id="err"></div>
+
+    <div class="result" id="result">
+      <div class="result-header">
+        <h3>Result</h3>
+        <!-- <button class="copyBtn" onclick="copyResult()">Copy</button> -->
+      </div>
+      <div id="output"></div>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>IP</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>ZIP</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="historyChart"></canvas>
+    </div>
+
+    <div id="map" class="map-container"></div>
+  </div>
+</main>
+
+<footer>
+  <p>𝓐𝓭𝓼𝔀𝓸𝓻𝓵𝓭𝓜𝓮𝓭𝓲𝓪 | Contact: info@adsworldmedia.com</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
