@@ -1,0 +1,23 @@
+{
+  "name": "ip-to-zip-code-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "particles.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sagorchandradas/iptozipfindertool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sagorchandradas/iptozipfindertool/issues"
+  },
+  "homepage": "https://github.com/Sagorchandradas/iptozipfindertool#readme",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
